@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="flex items-center justify-between px-40 py-4 bg-transparent">
+            <a class="font-bold text-xl">TheClock</a>
+            <div class="flex">
+            <a class="px-6 hover-c-color self-center duration-200 cursor-pointer">Home</a>
+            <a class="px-6 hover-c-color self-center duration-200 cursor-pointer">About</a>
+            <a class="px-6 hover-c-color self-center duration-200 cursor-pointer">Contact</a>
+            <!-- Button in Tailwind -->
+            <button type="button" onclick="buttonClick()" class="ml-16 text-black bg-white border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-4 py-2 mr-2 my-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Get started</button>
+            </div>
+        </nav>
+
+        <div class="con flex flex-col justify-center" style="height: calc(100% - 95px);">
+            <h1 class="text-6xl font-bold tracking-wide">The clock<br>is <span class="text-white">ticking</span>.</h1>
+            <p class="py-6">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <br>
+                sed diam nonumy eirmod tempor labore et.
+            </p>
+            <!-- Button -->
+            <div>
+                <button type="button" onclick="buttonClick()" class="text-black bg-white border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Get started</button>
+            </div>
+
+            <!-- stats -->
+            <div class="flex flex-row mt-40">
+                <div class="flex flex-col mr-20 hover:scale-[1.05] transition">
+                    <h1 class="text-4xl font-bold" id="count1">100+</h1>
+                    <p class="">Users</p>
+                </div>
+                <div class="flex flex-col hover:scale-[1.05] transition">
+                    <h1 class="text-4xl font-bold">3000+</h1>
+                    <p class="">Stunden</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>
+<script src="main.js"></script>

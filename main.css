@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --color: rgb(2, 48, 64);
+}
+
+.header{
+    background: conic-gradient(from 225deg, #eee, var(--color));
+    @apply bg-red-300 h-screen;
+}
+
+.c-color{
+    color: var(--color);
+}
+
+.hover-c-color:hover{
+    @apply c-color;
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.con{
+    @apply px-40;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
